@@ -1,0 +1,70 @@
+.audiowide-regular {
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.gabarito-body {
+    font-family: "Gabarito", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.horizontal-scroll {
+    display: flex; /* Asegura que los elementos hijos se alineen en fila */
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem; /* Espacio entre elementos, ajusta según necesidad */
+    padding-bottom: 10px; /* Un pequeño relleno si es necesario */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    height: 8px; /* Ajusta el tamaño de la barra de desplazamiento */
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Color de la barra de desplazamiento */
+    border-radius: 4px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: #edd588; /* Color al pasar el ratón sobre la barra */
+}
+
+.spinner-container {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.card {
+    position: relative;
+    flex: 0 0 auto; /* para asegurar que las cards no se estiren */
+    width: 250px; /* para ajustar el tamaño de las cards */
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale (1.05);
+    z-index: 10;
+}
+
+.card img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la card */
+    height: 60%; /* Asegura que la imagen ocupe todo el alto de la card */
+    object-fit: contain; /* Mantiene la relación de aspecto de la imagen sin distorsionarla */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+.navbar img {
+    filter: drop-shadow(0 0 8px #ffffff55);
+    transition: filter 0.3s ease;
+}
+  
+.navbar img:hover {
+    filter: drop-shadow(0 0 20px #b8a874) brightness(2.8);
+}
